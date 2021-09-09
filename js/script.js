@@ -89,524 +89,524 @@ document.addEventListener('click', function(element) {
 
 // ! Functions for cards
 const cardOriginalImageImdbAvailable = (data) => {
-  return `<section class="card bg-light">
-            <section class="card-image">
+  return `<div class="card bg-light">
+            <div class="card-image">
               <img src="${data.show.image.original}" alt="Cover of ${data.show.name}">
-            </section>
-            <section class="bottom-card-elements">
-              <section class="details">
+            </div>
+            <div class="bottom-card-elements">
+              <div class="details">
                 <h4>${data.show.name}</h4>
                 <h6>${data.show.premiered}</h6>
-              </section>
-              <section class="bottom-card">
-                <section class="leftside">
-                  <section class="rating-icon">
+              </div>
+              <div class="bottom-card">
+                <div class="leftside">
+                  <div class="rating-icon">
                     <!-- ! INI ICON BINTANG UNTUK RATING -->
                     <img src="img/cards/star.png" alt="">
-                  </section>
-                  <section class="card-rating">
+                  </div>
+                  <div class="card-rating">
                     <!-- ! INI RATINGNYA BERAPA -->
                     <p>${data.show.rating.average}</p>
-                  </section>
-                </section>
-                <section class="rightside">
-                  <section class="card-button">
+                  </div>
+                </div>
+                <div class="rightside">
+                  <div class="card-button">
                     <button class="more-details-button" data-imdbid="${data.show.externals.imdb}" data-bs-toggle="modal" data-bs-target="#more-details-modal">More Details</button>
-                  </section>
-                </section>
-              </section>
-            </section>
-          </section>`
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>`
 }
 
 const cardOriginalImageAvailable = (data) => {
-  return `<section class="card bg-light">
-            <section class="card-image">
+  return `<div class="card bg-light">
+            <div class="card-image">
               <img src="${data.show.image.original}" alt="Cover of ${data.show.name}">
-            </section>
-            <section class="bottom-card-elements">
-              <section class="details">
+            </div>
+            <div class="bottom-card-elements">
+              <div class="details">
                 <h4>${data.show.name}</h4>
                 <h6>${data.show.premiered}</h6>
-              </section>
-              <section class="bottom-card">
-                <section class="leftside">
-                  <section class="rating-icon">
+              </div>
+              <div class="bottom-card">
+                <div class="leftside">
+                  <div class="rating-icon">
                     <!-- ! INI ICON BINTANG UNTUK RATING -->
                     <img src="img/cards/star.png" alt="">
-                  </section>
-                  <section class="card-rating">
+                  </div>
+                  <div class="card-rating">
                     <!-- ! INI RATINGNYA BERAPA -->
                     <p>${data.show.rating.average}</p>
-                  </section>
-                </section>
-                <!-- <section class="rightside">
-                  <section class="card-button">
+                  </div>
+                </div>
+                <!-- <div class="rightside">
+                  <div class="card-button">
                     <button class="more-details-button" data-imdbid="" data-bs-toggle="modal" data-bs-target="#more-details-modal">More Details</button>
-                  </section>
-                </section> -->
-              </section>
-            </section>
-          </section>`
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>`
 }
 
 const cardMediumImageImdbAvailable = (data) => {
-  return `<section class="card bg-light">
-            <section class="card-image">
+  return `<div class="card bg-light">
+            <div class="card-image">
               <img src="${data.show.image.medium}" alt="Cover of ${data.show.name}">
-            </section>
-            <section class="bottom-card-elements">
-              <section class="details">
+            </div>
+            <div class="bottom-card-elements">
+              <div class="details">
                 <h4>${data.show.name}</h4>
                 <h6>${data.show.premiered}</h6>
-              </section>
-              <section class="bottom-card">
-                <section class="leftside">
-                  <section class="rating-icon">
+              </div>
+              <div class="bottom-card">
+                <div class="leftside">
+                  <div class="rating-icon">
                     <!-- ! INI ICON BINTANG UNTUK RATING -->
                     <img src="img/cards/star.png" alt="">
-                  </section>
-                  <section class="card-rating">
+                  </div>
+                  <div class="card-rating">
                     <!-- ! INI RATINGNYA BERAPA -->
                     <p>${data.show.rating.average}</p>
-                  </section>
-                </section>
-                <section class="rightside">
-                  <section class="card-button">
+                  </div>
+                </div>
+                <div class="rightside">
+                  <div class="card-button">
                     <button class="more-details-button" data-imdbid="${data.show.externals.imdb}" data-bs-toggle="modal" data-bs-target="#more-details-modal">More Details</button>
-                  </section>
-                </section>
-              </section>
-            </section>
-          </section>`
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>`
 }
 
 const cardMediumImageAvailable = (data) => {
-  return `<section class="card bg-light">
-            <section class="card-image">
+  return `<div class="card bg-light">
+            <div class="card-image">
               <img src="${data.show.image.medium}" alt="Cover of ${data.show.name}">
-            </section>
-            <section class="bottom-card-elements">
-              <section class="details">
+            </div>
+            <div class="bottom-card-elements">
+              <div class="details">
                 <h4>${data.show.name}</h4>
                 <h6>${data.show.premiered}</h6>
-              </section>
-              <section class="bottom-card">
-                <section class="leftside">
-                  <section class="rating-icon">
+              </div>
+              <div class="bottom-card">
+                <div class="leftside">
+                  <div class="rating-icon">
                     <!-- ! INI ICON BINTANG UNTUK RATING -->
                     <img src="img/cards/star.png" alt="">
-                  </section>
-                  <section class="card-rating">
+                  </div>
+                  <div class="card-rating">
                     <!-- ! INI RATINGNYA BERAPA -->
                     <p>${data.show.rating.average}</p>
-                  </section>
-                </section>
-                <!-- <section class="rightside">
-                  <section class="card-button">
+                  </div>
+                </div>
+                <!-- <div class="rightside">
+                  <div class="card-button">
                     <button class="more-details-button" data-imdbid="" data-bs-toggle="modal" data-bs-target="#more-details-modal">More Details</button>
-                  </section>
-                </section> -->
-              </section>
-            </section>
-          </section>`
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>`
 }
 
 const cardNoImageImdbAvailable = (data) => {
-  return `<section class="card bg-light">
-            <section class="card-image">
+  return `<div class="card bg-light">
+            <div class="card-image">
               <img src="" alt="Cover of ${data.show.name}">
-            </section>
-            <section class="bottom-card-elements">
-              <section class="details">
+            </div>
+            <div class="bottom-card-elements">
+              <div class="details">
                 <h4>${data.show.name}</h4>
                 <h6>${data.show.premiered}</h6>
-              </section>
-              <section class="bottom-card">
-                <section class="leftside">
-                  <section class="rating-icon">
+              </div>
+              <div class="bottom-card">
+                <div class="leftside">
+                  <div class="rating-icon">
                     <!-- ! INI ICON BINTANG UNTUK RATING -->
                     <img src="img/cards/star.png" alt="">
-                  </section>
-                  <section class="card-rating">
+                  </div>
+                  <div class="card-rating">
                     <!-- ! INI RATINGNYA BERAPA -->
                     <p>${data.show.rating.average}</p>
-                  </section>
-                </section>
-                <section class="rightside">
-                  <section class="card-button">
+                  </div>
+                </div>
+                <div class="rightside">
+                  <div class="card-button">
                     <button type="button" class="more-details-button" data-imdbid="${data.show.externals.imdb}" data-bs-toggle="modal" data-bs-target="#more-details-modal">More Details</button>
-                  </section>
-                </section>
-              </section>
-            </section>
-          </section>`
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>`
 }
 
 const cardNoImageAvailable = (data) => {
-  return `<section class="card bg-light">
-            <section class="card-image">
+  return `<div class="card bg-light">
+            <div class="card-image">
               <img src="" alt="Cover of ${data.show.name}">
-            </section>
-            <section class="bottom-card-elements">
-              <section class="details">
+            </div>
+            <div class="bottom-card-elements">
+              <div class="details">
                 <h4>${data.show.name}</h4>
                 <h6>${data.show.premiered}</h6>
-              </section>
-              <section class="bottom-card">
-                <section class="leftside">
-                  <section class="rating-icon">
+              </div>
+              <div class="bottom-card">
+                <div class="leftside">
+                  <div class="rating-icon">
                     <!-- ! INI ICON BINTANG UNTUK RATING -->
                     <img src="img/cards/star.png" alt="">
-                  </section>
-                  <section class="card-rating">
+                  </div>
+                  <div class="card-rating">
                     <!-- ! INI RATINGNYA BERAPA -->
                     <p>${data.show.rating.average}</p>
-                  </section>
-                </section>
-                <!-- <section class="rightside">
-                  <section class="card-button">
+                  </div>
+                </div>
+                <!-- <div class="rightside">
+                  <div class="card-button">
                     <button type="button" class="more-details-button" data-imdbid="" data-bs-toggle="modal" data-bs-target="#more-details-modal">More Details</button>
-                  </section>
-                </section> -->
-              </section>
-            </section>
-          </section>`
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>`
 }
 
 // ! Functions for modals
 const modalNetworkImdbOriginal = (data) => {
-  return `<section class="modal-header">
+  return `<div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">${data.name}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </section>
+          </div>
           <!-- ! START BODY -->
-          <section class="modal-body modal-details-contents">
-            <section class="modal-details-image">
+          <div class="modal-body modal-details-contents">
+            <div class="modal-details-image">
               <img src="${data.image.original}" alt="Cover of ${data.name}">
-            </section>
-            <section class="modal-details-info container-fluid">
-              <section class="info-keys">
-                <section class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+            </div>
+            <div class="modal-details-info container-fluid">
+              <div class="info-keys">
+                <div class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p class="key-info"><strong>Premiered</strong></p>
-                </section>
-                <section class="key-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="key-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p class="key-info"><strong>Status</strong></p>
-                </section>
-                <section class="key-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="key-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p class="key-info"><strong>Rating</strong></p>
-                </section>
-                <section class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p class="key-info"><strong>Genre(s)</strong></p>
-                </section>
-                <section class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p class="key-info"><strong>Channel(s)</strong></p>
-                </section>
-                <section class="key-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="key-summary"> <!-- SUMMARY / SINOPSIS -->
                   <p class="key-info"><strong>Summary</strong></p>
-                </section>
-              </section>
+                </div>
+              </div>
               <!-- ! INFO -->
-              <section class="info-details">
-                <section class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+              <div class="info-details">
+                <div class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="info-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p>${data.status}</p>
-                </section>
-                <section class="info-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="info-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p>${data.rating.average}</p>
-                </section>
-                <section class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p>${data.network.name}</p>
-                </section>
-                <section class="info-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="info-summary"> <!-- SUMMARY / SINOPSIS -->
                   ${data.summary}
-                </section>
-              </section>
-            </section>
-          </section>`
+                </div>
+              </div>
+            </div>
+          </div>`
 }
 
 const modalNoNetworkImdbOriginal = (data) => {
-  return `<section class="modal-header">
+  return `<div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">${data.name}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </section>
+          </div>
           <!-- ! START BODY -->
-          <section class="modal-body modal-details-contents">
-            <section class="modal-details-image">
+          <div class="modal-body modal-details-contents">
+            <div class="modal-details-image">
               <img src="${data.image.original}" alt="Cover of ${data.name}">
-            </section>
-            <section class="modal-details-info container-fluid">
-              <section class="info-keys">
-                <section class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+            </div>
+            <div class="modal-details-info container-fluid">
+              <div class="info-keys">
+                <div class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p class="key-info"><strong>Premiered</strong></p>
-                </section>
-                <section class="key-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="key-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p class="key-info"><strong>Status</strong></p>
-                </section>
-                <section class="key-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="key-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p class="key-info"><strong>Rating</strong></p>
-                </section>
-                <section class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p class="key-info"><strong>Genre(s)</strong></p>
-                </section>
-                <section class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p class="key-info"><strong>Channel(s)</strong></p>
-                </section>
-                <section class="key-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="key-summary"> <!-- SUMMARY / SINOPSIS -->
                   <p class="key-info"><strong>Summary</strong></p>
-                </section>
-              </section>
+                </div>
+              </div>
               <!-- ! INFO -->
-              <section class="info-details">
-                <section class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+              <div class="info-details">
+                <div class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="info-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p>${data.status}</p>
-                </section>
-                <section class="info-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="info-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p>${data.rating.average}</p>
-                </section>
-                <section class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p>null</p>
-                </section>
-                <section class="info-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="info-summary"> <!-- SUMMARY / SINOPSIS -->
                   ${data.summary}
-                </section>
-              </section>
-            </section>
-          </section>`
+                </div>
+              </div>
+            </div>
+          </div>`
 }
 
 const modalNetworkImdbMedium = (data) => {
-  return `<section class="modal-header">
+  return `<div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">${data.name}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </section>
+          </div>
           <!-- ! START BODY -->
-          <section class="modal-body modal-details-contents">
-            <section class="modal-details-image">
+          <div class="modal-body modal-details-contents">
+            <div class="modal-details-image">
               <img src="${data.image.medium}" alt="Cover of ${data.name}">
-            </section>
-            <section class="modal-details-info container-fluid">
-              <section class="info-keys">
-                <section class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+            </div>
+            <div class="modal-details-info container-fluid">
+              <div class="info-keys">
+                <div class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p class="key-info"><strong>Premiered</strong></p>
-                </section>
-                <section class="key-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="key-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p class="key-info"><strong>Status</strong></p>
-                </section>
-                <section class="key-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="key-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p class="key-info"><strong>Rating</strong></p>
-                </section>
-                <section class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p class="key-info"><strong>Genre(s)</strong></p>
-                </section>
-                <section class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p class="key-info"><strong>Channel(s)</strong></p>
-                </section>
-                <section class="key-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="key-summary"> <!-- SUMMARY / SINOPSIS -->
                   <p class="key-info"><strong>Summary</strong></p>
-                </section>
-              </section>
+                </div>
+              </div>
               <!-- ! INFO -->
-              <section class="info-details">
-                <section class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+              <div class="info-details">
+                <div class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="info-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p>${data.status}</p>
-                </section>
-                <section class="info-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="info-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p>${data.rating.average}</p>
-                </section>
-                <section class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p>${data.network.name}</p>
-                </section>
-                <section class="info-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="info-summary"> <!-- SUMMARY / SINOPSIS -->
                   ${data.summary}
-                </section>
-              </section>
-            </section>
-          </section>`
+                </div>
+              </div>
+            </div>
+          </div>`
 }
 
 const modalNoNetworkImdbMedium = (data) => {
-  return `<section class="modal-header">
+  return `<div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">${data.name}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </section>
+          </div>
           <!-- ! START BODY -->
-          <section class="modal-body modal-details-contents">
-            <section class="modal-details-image">
+          <div class="modal-body modal-details-contents">
+            <div class="modal-details-image">
               <img src="${data.image.medium}" alt="Cover of ${data.name}">
-            </section>
-            <section class="modal-details-info container-fluid">
-              <section class="info-keys">
-                <section class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+            </div>
+            <div class="modal-details-info container-fluid">
+              <div class="info-keys">
+                <div class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p class="key-info"><strong>Premiered</strong></p>
-                </section>
-                <section class="key-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="key-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p class="key-info"><strong>Status</strong></p>
-                </section>
-                <section class="key-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="key-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p class="key-info"><strong>Rating</strong></p>
-                </section>
-                <section class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p class="key-info"><strong>Genre(s)</strong></p>
-                </section>
-                <section class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p class="key-info"><strong>Channel(s)</strong></p>
-                </section>
-                <section class="key-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="key-summary"> <!-- SUMMARY / SINOPSIS -->
                   <p class="key-info"><strong>Summary</strong></p>
-                </section>
-              </section>
+                </div>
+              </div>
               <!-- ! INFO -->
-              <section class="info-details">
-                <section class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+              <div class="info-details">
+                <div class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="info-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p>${data.status}</p>
-                </section>
-                <section class="info-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="info-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p>${data.rating.average}</p>
-                </section>
-                <section class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p>null</p>
-                </section>
-                <section class="info-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="info-summary"> <!-- SUMMARY / SINOPSIS -->
                   ${data.summary}
-                </section>
-              </section>
-            </section>
-          </section>`
+                </div>
+              </div>
+            </div>
+          </div>`
 }
 
 const modalNetworkImdbNoImage = (data) => {
-  return `<section class="modal-header">
+  return `<div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">${data.name}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </section>
+          </div>
           <!-- ! START BODY -->
-          <section class="modal-body modal-details-contents">
-            <section class="modal-details-image">
+          <div class="modal-body modal-details-contents">
+            <div class="modal-details-image">
               <img src="" alt="Cover of ${data.name}">
-            </section>
-            <section class="modal-details-info container-fluid">
-              <section class="info-keys">
-                <section class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+            </div>
+            <div class="modal-details-info container-fluid">
+              <div class="info-keys">
+                <div class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p class="key-info"><strong>Premiered</strong></p>
-                </section>
-                <section class="key-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="key-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p class="key-info"><strong>Status</strong></p>
-                </section>
-                <section class="key-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="key-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p class="key-info"><strong>Rating</strong></p>
-                </section>
-                <section class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p class="key-info"><strong>Genre(s)</strong></p>
-                </section>
-                <section class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p class="key-info"><strong>Channel(s)</strong></p>
-                </section>
-                <section class="key-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="key-summary"> <!-- SUMMARY / SINOPSIS -->
                   <p class="key-info"><strong>Summary</strong></p>
-                </section>
-              </section>
+                </div>
+              </div>
               <!-- ! INFO -->
-              <section class="info-details">
-                <section class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+              <div class="info-details">
+                <div class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="info-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p>${data.status}</p>
-                </section>
-                <section class="info-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="info-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p>${data.rating.average}</p>
-                </section>
-                <section class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p>${data.network.name}</p>
-                </section>
-                <section class="info-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="info-summary"> <!-- SUMMARY / SINOPSIS -->
                   ${data.summary}
-                </section>
-              </section>
-            </section>
-          </section>`
+                </div>
+              </div>
+            </div>
+          </div>`
 }
 
 const modalNoNetworkImdbNoImage = (data) => {
-  return `<section class="modal-header">
+  return `<div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">${data.name}</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </section>
+          </div>
           <!-- ! START BODY -->
-          <section class="modal-body modal-details-contents">
-            <section class="modal-details-image">
+          <div class="modal-body modal-details-contents">
+            <div class="modal-details-image">
               <img src="" alt="Cover of ${data.name}">
-            </section>
-            <section class="modal-details-info container-fluid">
-              <section class="info-keys">
-                <section class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+            </div>
+            <div class="modal-details-info container-fluid">
+              <div class="info-keys">
+                <div class="key-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p class="key-info"><strong>Premiered</strong></p>
-                </section>
-                <section class="key-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="key-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p class="key-info"><strong>Status</strong></p>
-                </section>
-                <section class="key-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="key-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p class="key-info"><strong>Rating</strong></p>
-                </section>
-                <section class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="key-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p class="key-info"><strong>Genre(s)</strong></p>
-                </section>
-                <section class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="key-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p class="key-info"><strong>Channel(s)</strong></p>
-                </section>
-                <section class="key-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="key-summary"> <!-- SUMMARY / SINOPSIS -->
                   <p class="key-info"><strong>Summary</strong></p>
-                </section>
-              </section>
+                </div>
+              </div>
               <!-- ! INFO -->
-              <section class="info-details">
-                <section class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
+              <div class="info-details">
+                <div class="info-premiered"> <!-- PERTAMA KALI TAYANG KAPAN -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-show-status"> <!-- MASIH BERJALAN GAK -->
+                </div>
+                <div class="info-show-status"> <!-- MASIH BERJALAN GAK -->
                   <p>${data.status}</p>
-                </section>
-                <section class="info-show-rating"> <!-- RATING TV SHOWNYA -->
+                </div>
+                <div class="info-show-rating"> <!-- RATING TV SHOWNYA -->
                   <p>${data.rating.average}</p>
-                </section>
-                <section class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
+                </div>
+                <div class="info-genres"> <!-- GENRE-GENRE TV SHOWNYA -->
                   <p>${data.premiered}</p>
-                </section>
-                <section class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
+                </div>
+                <div class="info-channel"> <!-- DITAYANGIN DI CHANNEL APA -->
                   <p>null</p>
-                </section>
-                <section class="info-summary"> <!-- SUMMARY / SINOPSIS -->
+                </div>
+                <div class="info-summary"> <!-- SUMMARY / SINOPSIS -->
                   ${data.summary}
-                </section>
-              </section>
-            </section>
-          </section>`
+                </div>
+              </div>
+            </div>
+          </div>`
 }
